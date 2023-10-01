@@ -1,0 +1,24 @@
+.partners__list {
+  margin: 46px 0 0 0;
+  padding: 0 0 44px 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #eee;
+}
+
+.partners__item {
+  position: relative;
+}
+
+.partners__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: #eee;
+  right: -44px;
+  top: 10%;
+}
